@@ -7,8 +7,12 @@ const Kosmos = () => {
     <>
     <Ded>
     <Header>
+      <Disibl>
       <Link to="/" ><h1>IT-LOGO</h1></Link> 
+      </Disibl>
+      <Disible>
       <Link to="input" > <h1>Registr</h1></Link>
+      </Disible>
     </Header>
     <div>
         <Outlet/>
@@ -22,6 +26,7 @@ const Kosmos = () => {
 export default Kosmos
 
 const Header = styled.div`
+border: 1px solid white;
     width: 85%;
     height: 165px;
     border-radius: 90px;
@@ -30,9 +35,10 @@ const Header = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    background: linear-gradient(181.31deg, #CAC1C1 -9.48%, rgba(143, 140, 140, 0) 100.9%);
-  
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; 
+    background-image:url("https://www.cnet.com/a/img/resize/90bc98c7d6017cab30ad4f104235a0adb9c80364/hub/2022/01/14/a9f69e23-6e03-437a-95a2-3493834fa12b/gettyimages-1158013906.jpg?auto=webp&fit=crop&height=675&width=1200"); 
+    background-size: cover;
+    background-position: center;
 `
 const Ded = styled.div`
 border: 1px solid black;
@@ -41,4 +47,18 @@ border: 1px solid black;
   background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20230527/pngtree-space-hd-wallpapers-4-k-image_2682589.jpg");
   background-size: cover;
   background-position: center;
+`
+const Disibl = styled.div`
+  width: 140px;
+  height: 80px;
+  background-color: #989898;
+  border-radius: 30px;
+  
+`
+const Disible = styled.div`
+  width: 140px;
+  height: 80px;
+  background-color: #989898;
+  border-radius: 30px;
+  
 `

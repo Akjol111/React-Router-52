@@ -12,7 +12,6 @@ const Logo = () => {
 export default Logo
 
 const Img = styled.img`
-border-radius: 50px;
+  border-radius: 50px;
   margin-top: 90px;
-
 `

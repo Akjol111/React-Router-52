@@ -36,7 +36,7 @@ const Registr = () => {
     <>
     <div style={{ margin: "20px" }}>
     <Div>
-      <label htmlFor="email" style={{ fontSize: "30px", fontWeight: "bold", position: "absolute",marginTop: "10px", marginLeft: "-20px",color: "blue" }}>
+      <label htmlFor="email" style={{ fontSize: "30px", fontWeight: "bold", position: "absolute",marginTop: "10px", marginLeft: "-20px",color: "green" }}>
           Регистрация
       </label>
       <input
@@ -46,6 +46,7 @@ const Registr = () => {
         onChange={handleChange}
         placeholder="Введите email"
         style={{
+          border: "1px solid green",
           display: "block",
           width: "300px",
           margin: "auto",
@@ -96,6 +97,7 @@ const Div = styled.div`
 
 `
 const Input = styled.input`
+border: 3px solid green;
   width: 300px;
   padding: 10px;
   border-radius: 4px;
@@ -104,6 +106,7 @@ const Input = styled.input`
   margin-top: 140px;
 `
 const Twoinput = styled.input`
+  border: 3px solid green;
   width: 300px;
   padding: 10px;
   border-width: 1px;
@@ -113,7 +116,7 @@ const Twoinput = styled.input`
 `
 const Button = styled.button`
         padding: 10px;
-          background-color: #1111f9;
+          background-color: green;
           color:white;
           border: none;
           border-radius: 4px;
